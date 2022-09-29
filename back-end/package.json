@@ -1,0 +1,26 @@
+{
+  "name": "email",
+  "main": "app.js",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "build": "rm -rf ./build && tsc -p .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "dev": "nodemon -e ts -w ./src -x npm run watch",
+    "watch": "ts-node ./src/app.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1"
+  }
+}

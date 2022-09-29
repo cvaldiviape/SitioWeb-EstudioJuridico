@@ -1,0 +1,144 @@
+
+/* -------------------styles component  in route: /logged_out/components/cards/Cardx.js -------------------*/
+#cardAnimation{
+    /* max-width: 100%; */
+    width: 100%;
+	font-family: arial;
+	font-size: 16px;
+	background: #000;
+}
+#cardAnimation img{
+	max-width: 100%;
+    width: 100%;
+}
+#cardAnimation .ui-card{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+#cardAnimation .ui-card img{
+	transform: scale(1.1);
+	transition: all 0.3s ease-out;
+}
+#cardAnimation .ui-card:hover img{
+	opacity: 0.3
+}
+#cardAnimation .ui-card .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+#cardAnimation .ui-card .description h3{
+	font-weight: 700;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+#cardAnimation .price{
+    color: #FFB341;
+	font-weight: bold;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+#cardAnimation .ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+#cardAnimation .ui-card .description .mi-link{
+    color: "#fff";
+	background:#111E47;
+	/* display: inline-block; */
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+#cardAnimation .ui-card .description .mi-link:hover{
+	background:#FFB341;
+}
+#cardAnimation .ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+    color: "#111E47";
+}
+#cardAnimation .ui-card:hover .description Button{
+	opacity: 1;
+	transform: translateY(0px);
+    color: "#111E47";
+}
+#cardAnimation .ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+#cardAnimation .ui-card:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/* -------------------styles component  in route: /logged_out/components/home/HeadSection.js -------------------*/
+
+#my-carousel-web .carousel{
+    position: relative;
+    height: 100vh;
+}
+#my-carousel-web .carousel .overlay{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    padding: 0.4rem 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+#my-carousel-web .carousel img{
+    filter: brightness(50%);
+}
+#my-carousel-web .carousel .overlay-title{
+    margin: 0.8rem 0 1rem 0;
+    font-size: 40px;
+}
+#my-carousel-web .carousel .overlay-description{
+    margin: 0.8rem 0 1rem 0;
+    font-size: 18px;
+}
+/* --------------movil------------- */
+#my-carousel-movil .carousel{
+    position: relative;
+    /* height: 100vh; */
+}
+#my-carousel-movil .carousel .overlay{
+    width: 90%;
+    position: absolute;
+    top: 62%;
+    transform: translateY(-50%);
+    left: 5%;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+#my-carousel-movil .carousel img{
+    filter: brightness(50%);
+}
+#my-carousel-movil .carousel .overlay-title{
+    margin: 0.8rem 0 1rem 0;
+    font-size: 20px;
+}
+#my-carousel-movil .carousel .overlay-description{
+    margin: 0.8rem 0 1rem 0;
+    font-size: 10px;
+}
